@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Starbucks Coffe</title>
+    <link rel="stylesheet" type="text/css" href="Estilos/style.css">
+    <link rel="icon" href="img/logo.png">
+</head>
+
+<body>
+
+    <!-- PAGINA INICIO -->
+    <section class="section_inicio" id="inicio">
+        <div class="circulo"></div>
+    
+        <!-- MENU NAVEGACION -->
+        <header>
+            <a href="index.html"><img class="logo" src="img/logo.png" alt="Starbukcs"></a>
+
+            <ul class="nav_links">
+
+                <img class="boton_cerrar" src="img/menu.png" alt="menu">
+
+                <li><a class="underline" href="#inicio">Inicio</a></li>
+                <li><a class="underline" href="#menu">Menu</a></li>
+                <li><a class="underline" href="#nosotros">Nosotros</a></li>
+                <li><a class="underline" href="#contacto">Contacto</a></li>
+            </ul>
+
+            <img class="boton_abrir" src="img/menu.png" alt="menu">
+        </header>
+
+
+        <!-- INICIO -->
+        <div class="contenido">
+            <div class="texto">
+                <h2>No es solo Cafe <br> Es <span>Starbucks</span></h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, dolor. Sed ad soluta ullam
+                nemo vero voluptates aliquid error cupiditate quae perspiciatis laborum iste, dolorum consequatur.
+                Ipsum totam fuga dolorem.</p>
+
+                <a href="https://www.instagram.com/starbucks/" target="_blank">Conoce nuestro Instagram</a>
+            </div>
+
+            <div class="imagen">
+                <img class="cafe" src="img/img1.png" alt="starbucks">
+            </div>   
+        </div>
+
+        <ul class="thumb">
+            <li><img src="img/thumb1.png" onclick="imgSlider('img/img1.png')"></li>
+            <li><img src="img/thumb2.png" onclick="imgSlider('img/img2.png')"></li>
+            <li><img src="img/thumb3.png" onclick="imgSlider('img/img3.png')"></li>
+        </ul>
+    </section>
+
+    <!-- SCRIPT JAVA -->
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.cafe').src = anything;
+        }
+    </script>
+
+    <script type="text/javascript">
+        const nav_links = document.querySelector(".nav_links")
+        const boton_abrir = document.querySelector(".boton_abrir")
+        const boton_cerrar = document.querySelector(".boton_cerrar")
+ 
+        boton_abrir.addEventListener('click', () => {
+            nav_links.classList.add('menu_celular')
+        })
+
+        boton_cerrar.addEventListener('click', () => {
+            nav_links.classList.remove('menu_celular')
+        })
+    </script>
+
+
+    <span class="span_menu" id="menu">MENU</span>
+    <div class="texto_menu">
+        <h2>BEBIDAS</h2>
+    </div>
+    <!-- PAGINA MENU BEBIDAS-->
+    <section class="section_menu">
+
+        <!-- TARJETAS MENU CAFE -->
+        <div class="menu_container">
+            <div class="box">
+                
+                <div class="imagen_menu">
+                    <img src="img/cafeCaliente.png" alt="cafe">
+                </div>
+
+                <h2>Cafe Caliente</h2>
+
+                <a href="#" class="btn">Comprar Ahora</a>
+            </div>
+        </div>
+
+        <div class="menu_container">
+            <div class="box">
+                
+                <div class="imagen_menu">
+                    <img src="img/cafeFrio.png" alt="cafe">
+                </div>
+
+                <h2>Cafe Frio</h2>
+
+                <a href="#" class="btn">Comprar Ahora</a>
+            </div>
+        </div>
+
+        <div class="menu_container">
+            <div class="box">
+                
+                <div class="imagen_menu">
+                    <img src="img/frappucino.png" alt="cafe">
+                </div>
+
+                <h2>Frappucino</h2>
+
+                <a href="#" class="btn">Comprar Ahora</a>
+            </div>
+        </div>
+        
+        <div class="menu_container">
+            <div class="box">
+                
+                <div class="imagen_menu">
+                    <img src="img/te.png" alt="cafe">
+                </div>
+
+                <h2>Te Caliente</h2>
+
+                <a href="#" class="btn">Comprar Ahora</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="texto_menu">
+        <h2>COMIDAS</h2>
+    </div>
+    <!-- PAGINA MENU COMIDAS-->
+    <section class="section_menu">
+
+        <!-- TARJETAS MENU COMIDAS -->
+        <div class="menu_container">
+            <div class="box">
+                
+                <div class="imagen_menu">
+                    <img src="img/bakery.png" alt="cafe">
+                </div>
+
+                <h2>Bakery</h2>
+
+                <a href="#" class="btn">Comprar Ahora</a>
+            </div>
+        </div>
+
+        <div class="menu_container">
+            <div class="box">
+                
+                <div class="imagen_menu">
+                    <img src="img/snacks.png" alt="cafe">
+                </div>
+
+                <h2>Snacks</h2>
+
+                <a href="#" class="btn">Comprar Ahora</a>
+            </div>
+        </div>
+
+        <div class="menu_container">
+            <div class="box">
+                
+                <div class="imagen_menu">
+                    <img src="img/sandwiches.png" alt="cafe">
+                </div>
+
+                <h2>Sandwichs</h2>
+
+                <a href="#" class="btn">Comprar Ahora</a>
+            </div>
+        </div>
+
+        <div class="menu_container">
+            <div class="box">
+                
+                <div class="imagen_menu">
+                    <img src="img/sandwiches.png" alt="cafe">
+                </div>
+
+                <h2>Preparados</h2>
+
+                <a href="#" class="btn">Comprar Ahora</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- PAGINA NOSOTROS -->
+    <section class="section_nosotros" id="nosotros">
+        <div class="imagen_nosotros">
+            <img src="img/nosotros.png" alt="cafe">
+        </div>
+
+        <div class="texto_nosotros">
+            <h2>Mas de 50 años junto a vos.</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores a odit iusto, reprehenderit corporis velit exercitationem molestias similique maxime fuga.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum saepe ipsum libero. Impedit delectus ea architecto fugiat, labore est earum!</p>
+
+            <a href="#" class="btn">Leer Mas</a>
+        </div>
+    </section>
+
+    <!-- PAGINA APP -->
+    <section class="section_app">
+        <div class="texto_app">
+            <h2>Conoce Nuestra aplicacion y hace todo mas facil!</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores a odit iusto, reprehenderit corporis velit exercitationem molestias similique maxime fuga.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum saepe ipsum libero. Impedit delectus ea architecto fugiat, labore est earum!</p>
+
+            <a href="#" class="btn">Descargar App</a>
+        </div>
+
+        <div class="imagen_app">
+            <img src="img/app.png" alt="app">
+        </div>
+    </section>
+
+
+
+    <!-- CONTACTO -->
+    <section class="section_contacto" id="contacto">
+        <div class="social">
+            <a href="#"><img src="img/instagram.png" alt="instagram"></a>
+            <a href="#"><img src="img/twitter.png" alt="twitter"></a>
+            <a href="#"><img src="img/youtube.png" alt="youtube"></a>
+            <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+        </div>
+
+        <div class="links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms Of Use</a>
+            <a href="#">Our Company</a>
+        </div>
+
+        <p>&#169; DeppnerElias All Right Reserved.</p>
+    </section>
+
+</body>
+</html>
